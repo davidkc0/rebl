@@ -25,6 +25,10 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         
     
+//        self.navigationController?.setNavigationBarHidden(true, animated: false)
+//        self.navigationController?.navigationBar.frame.size.height = 0
+        self.navigationController?.navigationBar.alpha = 0
+        
         
         self.actInd.center = self.view.center
         self.actInd.center.y = self.view.frame.size.height * (3/4)
