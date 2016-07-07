@@ -4,6 +4,11 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="SourceCodePro-Semibold.otf">
+            <string>SourceCodePro-Semibold</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
@@ -16,7 +21,23 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="rebl" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a3R-Bk-Y5s">
+                                <rect key="frame" x="246" y="273" width="108" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="108" id="Afs-7v-9dK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SourceCodePro-Semibold" family="Source Code Pro" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.72941176470000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="a3R-Bk-Y5s" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="253" id="76G-ug-K0W"/>
+                            <constraint firstItem="a3R-Bk-Y5s" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Egy-TW-ipB"/>
+                            <constraint firstItem="a3R-Bk-Y5s" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Idj-fP-dCS"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>

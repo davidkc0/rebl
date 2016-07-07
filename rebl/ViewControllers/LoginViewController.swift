@@ -14,11 +14,16 @@ class LoginViewController: UIViewController {
 
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
+    @IBAction func tapScreen(sender: AnyObject) {
+        
+        self.view.endEditing(true)
+    }
     
     var actInd: UIActivityIndicatorView = UIActivityIndicatorView(frame: CGRectMake(0,0,150,150))
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
     
         
         self.actInd.center = self.view.center
@@ -37,6 +42,8 @@ class LoginViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+
+
     
 
     /*
@@ -57,6 +64,8 @@ class LoginViewController: UIViewController {
         
         var username = self.usernameField.text
         var password = self.passwordField.text
+        
+        
         
         if (username?.utf16.count < 5 || password!.utf16.count < 5) {
             
@@ -86,6 +95,8 @@ class LoginViewController: UIViewController {
             
             
         }
+        
+    
     }
     
    
