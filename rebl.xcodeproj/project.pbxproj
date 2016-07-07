@@ -7,20 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		630A40BE1D2ED34600DC0E6C /* SourceCodePro-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 630A40B01D2ED34600DC0E6C /* SourceCodePro-Black.otf */; };
-		630A40BF1D2ED34600DC0E6C /* SourceCodePro-BlackIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 630A40B11D2ED34600DC0E6C /* SourceCodePro-BlackIt.otf */; };
-		630A40C01D2ED34600DC0E6C /* SourceCodePro-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 630A40B21D2ED34600DC0E6C /* SourceCodePro-Bold.otf */; };
-		630A40C11D2ED34600DC0E6C /* SourceCodePro-BoldIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 630A40B31D2ED34600DC0E6C /* SourceCodePro-BoldIt.otf */; };
-		630A40C21D2ED34600DC0E6C /* SourceCodePro-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 630A40B41D2ED34600DC0E6C /* SourceCodePro-ExtraLight.otf */; };
-		630A40C31D2ED34600DC0E6C /* SourceCodePro-ExtraLightIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 630A40B51D2ED34600DC0E6C /* SourceCodePro-ExtraLightIt.otf */; };
-		630A40C41D2ED34600DC0E6C /* SourceCodePro-It.otf in Resources */ = {isa = PBXBuildFile; fileRef = 630A40B61D2ED34600DC0E6C /* SourceCodePro-It.otf */; };
-		630A40C51D2ED34600DC0E6C /* SourceCodePro-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 630A40B71D2ED34600DC0E6C /* SourceCodePro-Light.otf */; };
-		630A40C61D2ED34600DC0E6C /* SourceCodePro-LightIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 630A40B81D2ED34600DC0E6C /* SourceCodePro-LightIt.otf */; };
-		630A40C71D2ED34600DC0E6C /* SourceCodePro-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 630A40B91D2ED34600DC0E6C /* SourceCodePro-Medium.otf */; };
-		630A40C81D2ED34600DC0E6C /* SourceCodePro-MediumIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 630A40BA1D2ED34600DC0E6C /* SourceCodePro-MediumIt.otf */; };
-		630A40C91D2ED34600DC0E6C /* SourceCodePro-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 630A40BB1D2ED34600DC0E6C /* SourceCodePro-Regular.otf */; };
-		630A40CA1D2ED34600DC0E6C /* SourceCodePro-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 630A40BC1D2ED34600DC0E6C /* SourceCodePro-Semibold.otf */; };
-		630A40CB1D2ED34600DC0E6C /* SourceCodePro-SemiboldIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 630A40BD1D2ED34600DC0E6C /* SourceCodePro-SemiboldIt.otf */; };
+		611B86AA1D2EE6B900064830 /* SIL Open Font License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 611B869A1D2EE6B900064830 /* SIL Open Font License.txt */; };
+		611B86AB1D2EE6B900064830 /* SourceCodePro-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 611B869B1D2EE6B900064830 /* SourceCodePro-Black.otf */; };
+		611B86AC1D2EE6B900064830 /* SourceCodePro-BlackIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 611B869C1D2EE6B900064830 /* SourceCodePro-BlackIt.otf */; };
+		611B86AD1D2EE6B900064830 /* SourceCodePro-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 611B869D1D2EE6B900064830 /* SourceCodePro-Bold.otf */; };
+		611B86AE1D2EE6B900064830 /* SourceCodePro-BoldIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 611B869E1D2EE6B900064830 /* SourceCodePro-BoldIt.otf */; };
+		611B86AF1D2EE6B900064830 /* SourceCodePro-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 611B869F1D2EE6B900064830 /* SourceCodePro-ExtraLight.otf */; };
+		611B86B01D2EE6B900064830 /* SourceCodePro-ExtraLightIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 611B86A01D2EE6B900064830 /* SourceCodePro-ExtraLightIt.otf */; };
+		611B86B11D2EE6B900064830 /* SourceCodePro-It.otf in Resources */ = {isa = PBXBuildFile; fileRef = 611B86A11D2EE6B900064830 /* SourceCodePro-It.otf */; };
+		611B86B21D2EE6B900064830 /* SourceCodePro-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 611B86A21D2EE6B900064830 /* SourceCodePro-Light.otf */; };
+		611B86B31D2EE6B900064830 /* SourceCodePro-LightIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 611B86A31D2EE6B900064830 /* SourceCodePro-LightIt.otf */; };
+		611B86B41D2EE6B900064830 /* SourceCodePro-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 611B86A41D2EE6B900064830 /* SourceCodePro-Medium.otf */; };
+		611B86B51D2EE6B900064830 /* SourceCodePro-MediumIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 611B86A51D2EE6B900064830 /* SourceCodePro-MediumIt.otf */; };
+		611B86B61D2EE6B900064830 /* SourceCodePro-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 611B86A61D2EE6B900064830 /* SourceCodePro-Regular.otf */; };
+		611B86B71D2EE6B900064830 /* SourceCodePro-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 611B86A71D2EE6B900064830 /* SourceCodePro-Semibold.otf */; };
+		611B86B81D2EE6B900064830 /* SourceCodePro-SemiboldIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 611B86A81D2EE6B900064830 /* SourceCodePro-SemiboldIt.otf */; };
 		635A72731D2DEC1E00472009 /* ParseLoginHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635A72721D2DEC1E00472009 /* ParseLoginHelper.swift */; };
 		635A72751D2DECC300472009 /* ErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635A72741D2DECC300472009 /* ErrorHandling.swift */; };
 		636A0BF11D2E3CDB004C61BA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636A0BF01D2E3CDB004C61BA /* LoginViewController.swift */; };
@@ -37,23 +38,24 @@
 /* Begin PBXFileReference section */
 		0119B6819C2C243300EA0201 /* Pods-rebl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rebl.release.xcconfig"; path = "Pods/Target Support Files/Pods-rebl/Pods-rebl.release.xcconfig"; sourceTree = "<group>"; };
 		40757EDCD11B1EEEE0B125ED /* Pods_rebl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rebl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		630A40B01D2ED34600DC0E6C /* SourceCodePro-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SourceCodePro-Black.otf"; path = "../../Downloads/source-code-pro/SourceCodePro-Black.otf"; sourceTree = "<group>"; };
-		630A40B11D2ED34600DC0E6C /* SourceCodePro-BlackIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SourceCodePro-BlackIt.otf"; path = "../../Downloads/source-code-pro/SourceCodePro-BlackIt.otf"; sourceTree = "<group>"; };
-		630A40B21D2ED34600DC0E6C /* SourceCodePro-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SourceCodePro-Bold.otf"; path = "../../Downloads/source-code-pro/SourceCodePro-Bold.otf"; sourceTree = "<group>"; };
-		630A40B31D2ED34600DC0E6C /* SourceCodePro-BoldIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SourceCodePro-BoldIt.otf"; path = "../../Downloads/source-code-pro/SourceCodePro-BoldIt.otf"; sourceTree = "<group>"; };
-		630A40B41D2ED34600DC0E6C /* SourceCodePro-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SourceCodePro-ExtraLight.otf"; path = "../../Downloads/source-code-pro/SourceCodePro-ExtraLight.otf"; sourceTree = "<group>"; };
-		630A40B51D2ED34600DC0E6C /* SourceCodePro-ExtraLightIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SourceCodePro-ExtraLightIt.otf"; path = "../../Downloads/source-code-pro/SourceCodePro-ExtraLightIt.otf"; sourceTree = "<group>"; };
-		630A40B61D2ED34600DC0E6C /* SourceCodePro-It.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SourceCodePro-It.otf"; path = "../../Downloads/source-code-pro/SourceCodePro-It.otf"; sourceTree = "<group>"; };
-		630A40B71D2ED34600DC0E6C /* SourceCodePro-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SourceCodePro-Light.otf"; path = "../../Downloads/source-code-pro/SourceCodePro-Light.otf"; sourceTree = "<group>"; };
-		630A40B81D2ED34600DC0E6C /* SourceCodePro-LightIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SourceCodePro-LightIt.otf"; path = "../../Downloads/source-code-pro/SourceCodePro-LightIt.otf"; sourceTree = "<group>"; };
-		630A40B91D2ED34600DC0E6C /* SourceCodePro-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SourceCodePro-Medium.otf"; path = "../../Downloads/source-code-pro/SourceCodePro-Medium.otf"; sourceTree = "<group>"; };
-		630A40BA1D2ED34600DC0E6C /* SourceCodePro-MediumIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SourceCodePro-MediumIt.otf"; path = "../../Downloads/source-code-pro/SourceCodePro-MediumIt.otf"; sourceTree = "<group>"; };
-		630A40BB1D2ED34600DC0E6C /* SourceCodePro-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SourceCodePro-Regular.otf"; path = "../../Downloads/source-code-pro/SourceCodePro-Regular.otf"; sourceTree = "<group>"; };
-		630A40BC1D2ED34600DC0E6C /* SourceCodePro-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SourceCodePro-Semibold.otf"; path = "../../Downloads/source-code-pro/SourceCodePro-Semibold.otf"; sourceTree = "<group>"; };
-		630A40BD1D2ED34600DC0E6C /* SourceCodePro-SemiboldIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SourceCodePro-SemiboldIt.otf"; path = "../../Downloads/source-code-pro/SourceCodePro-SemiboldIt.otf"; sourceTree = "<group>"; };
+		611B869A1D2EE6B900064830 /* SIL Open Font License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "SIL Open Font License.txt"; sourceTree = "<group>"; };
+		611B869B1D2EE6B900064830 /* SourceCodePro-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceCodePro-Black.otf"; sourceTree = "<group>"; };
+		611B869C1D2EE6B900064830 /* SourceCodePro-BlackIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceCodePro-BlackIt.otf"; sourceTree = "<group>"; };
+		611B869D1D2EE6B900064830 /* SourceCodePro-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceCodePro-Bold.otf"; sourceTree = "<group>"; };
+		611B869E1D2EE6B900064830 /* SourceCodePro-BoldIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceCodePro-BoldIt.otf"; sourceTree = "<group>"; };
+		611B869F1D2EE6B900064830 /* SourceCodePro-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceCodePro-ExtraLight.otf"; sourceTree = "<group>"; };
+		611B86A01D2EE6B900064830 /* SourceCodePro-ExtraLightIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceCodePro-ExtraLightIt.otf"; sourceTree = "<group>"; };
+		611B86A11D2EE6B900064830 /* SourceCodePro-It.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceCodePro-It.otf"; sourceTree = "<group>"; };
+		611B86A21D2EE6B900064830 /* SourceCodePro-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceCodePro-Light.otf"; sourceTree = "<group>"; };
+		611B86A31D2EE6B900064830 /* SourceCodePro-LightIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceCodePro-LightIt.otf"; sourceTree = "<group>"; };
+		611B86A41D2EE6B900064830 /* SourceCodePro-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceCodePro-Medium.otf"; sourceTree = "<group>"; };
+		611B86A51D2EE6B900064830 /* SourceCodePro-MediumIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceCodePro-MediumIt.otf"; sourceTree = "<group>"; };
+		611B86A61D2EE6B900064830 /* SourceCodePro-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceCodePro-Regular.otf"; sourceTree = "<group>"; };
+		611B86A71D2EE6B900064830 /* SourceCodePro-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceCodePro-Semibold.otf"; sourceTree = "<group>"; };
+		611B86A81D2EE6B900064830 /* SourceCodePro-SemiboldIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceCodePro-SemiboldIt.otf"; sourceTree = "<group>"; };
 		635A72721D2DEC1E00472009 /* ParseLoginHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseLoginHelper.swift; sourceTree = "<group>"; };
 		635A72741D2DECC300472009 /* ErrorHandling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorHandling.swift; sourceTree = "<group>"; };
-		635A727A1D2DFA7E00472009 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		635A727A1D2DFA7E00472009 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = ViewControllers/MainViewController.swift; sourceTree = "<group>"; };
 		636A0BF01D2E3CDB004C61BA /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		636A0BF21D2E3CE9004C61BA /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		636A0BF41D2E45E4004C61BA /* Main2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Main2ViewController.swift; sourceTree = "<group>"; };
@@ -96,6 +98,37 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		611B86A91D2EE6B900064830 /* source-code-pro */ = {
+			isa = PBXGroup;
+			children = (
+				611B869A1D2EE6B900064830 /* SIL Open Font License.txt */,
+				611B869B1D2EE6B900064830 /* SourceCodePro-Black.otf */,
+				611B869C1D2EE6B900064830 /* SourceCodePro-BlackIt.otf */,
+				611B869D1D2EE6B900064830 /* SourceCodePro-Bold.otf */,
+				611B869E1D2EE6B900064830 /* SourceCodePro-BoldIt.otf */,
+				611B869F1D2EE6B900064830 /* SourceCodePro-ExtraLight.otf */,
+				611B86A01D2EE6B900064830 /* SourceCodePro-ExtraLightIt.otf */,
+				611B86A11D2EE6B900064830 /* SourceCodePro-It.otf */,
+				611B86A21D2EE6B900064830 /* SourceCodePro-Light.otf */,
+				611B86A31D2EE6B900064830 /* SourceCodePro-LightIt.otf */,
+				611B86A41D2EE6B900064830 /* SourceCodePro-Medium.otf */,
+				611B86A51D2EE6B900064830 /* SourceCodePro-MediumIt.otf */,
+				611B86A61D2EE6B900064830 /* SourceCodePro-Regular.otf */,
+				611B86A71D2EE6B900064830 /* SourceCodePro-Semibold.otf */,
+				611B86A81D2EE6B900064830 /* SourceCodePro-SemiboldIt.otf */,
+			);
+			name = "source-code-pro";
+			path = "rebl/source-code-pro";
+			sourceTree = "<group>";
+		};
+		61DD31B21D2EF13A00F28F73 /* Junk */ = {
+			isa = PBXGroup;
+			children = (
+				635A727A1D2DFA7E00472009 /* MainViewController.swift */,
+			);
+			name = Junk;
+			sourceTree = "<group>";
+		};
 		635A72701D2DEB2400472009 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -108,7 +141,6 @@
 		635A72711D2DEB7200472009 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				635A727A1D2DFA7E00472009 /* MainViewController.swift */,
 				636A0BF41D2E45E4004C61BA /* Main2ViewController.swift */,
 				636A0BF01D2E3CDB004C61BA /* LoginViewController.swift */,
 				636A0BF21D2E3CE9004C61BA /* SignUpViewController.swift */,
@@ -120,20 +152,7 @@
 		63E07AC41D2DBA63006A1F0F = {
 			isa = PBXGroup;
 			children = (
-				630A40B01D2ED34600DC0E6C /* SourceCodePro-Black.otf */,
-				630A40B11D2ED34600DC0E6C /* SourceCodePro-BlackIt.otf */,
-				630A40B21D2ED34600DC0E6C /* SourceCodePro-Bold.otf */,
-				630A40B31D2ED34600DC0E6C /* SourceCodePro-BoldIt.otf */,
-				630A40B41D2ED34600DC0E6C /* SourceCodePro-ExtraLight.otf */,
-				630A40B51D2ED34600DC0E6C /* SourceCodePro-ExtraLightIt.otf */,
-				630A40B61D2ED34600DC0E6C /* SourceCodePro-It.otf */,
-				630A40B71D2ED34600DC0E6C /* SourceCodePro-Light.otf */,
-				630A40B81D2ED34600DC0E6C /* SourceCodePro-LightIt.otf */,
-				630A40B91D2ED34600DC0E6C /* SourceCodePro-Medium.otf */,
-				630A40BA1D2ED34600DC0E6C /* SourceCodePro-MediumIt.otf */,
-				630A40BB1D2ED34600DC0E6C /* SourceCodePro-Regular.otf */,
-				630A40BC1D2ED34600DC0E6C /* SourceCodePro-Semibold.otf */,
-				630A40BD1D2ED34600DC0E6C /* SourceCodePro-SemiboldIt.otf */,
+				611B86A91D2EE6B900064830 /* source-code-pro */,
 				63E07ACF1D2DBA63006A1F0F /* rebl */,
 				63E07ACE1D2DBA63006A1F0F /* Products */,
 				209CDC894A5D99694B933484 /* Pods */,
@@ -152,6 +171,7 @@
 		63E07ACF1D2DBA63006A1F0F /* rebl */ = {
 			isa = PBXGroup;
 			children = (
+				61DD31B21D2EF13A00F28F73 /* Junk */,
 				635A72711D2DEB7200472009 /* ViewControllers */,
 				635A72701D2DEB2400472009 /* Helpers */,
 				63E07AD01D2DBA63006A1F0F /* AppDelegate.swift */,
@@ -224,23 +244,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				611B86B41D2EE6B900064830 /* SourceCodePro-Medium.otf in Resources */,
+				611B86B71D2EE6B900064830 /* SourceCodePro-Semibold.otf in Resources */,
 				63E07ADB1D2DBA63006A1F0F /* LaunchScreen.storyboard in Resources */,
-				630A40C21D2ED34600DC0E6C /* SourceCodePro-ExtraLight.otf in Resources */,
-				630A40C51D2ED34600DC0E6C /* SourceCodePro-Light.otf in Resources */,
-				630A40C81D2ED34600DC0E6C /* SourceCodePro-MediumIt.otf in Resources */,
-				630A40C41D2ED34600DC0E6C /* SourceCodePro-It.otf in Resources */,
-				630A40CB1D2ED34600DC0E6C /* SourceCodePro-SemiboldIt.otf in Resources */,
-				630A40BE1D2ED34600DC0E6C /* SourceCodePro-Black.otf in Resources */,
-				630A40C01D2ED34600DC0E6C /* SourceCodePro-Bold.otf in Resources */,
-				630A40C31D2ED34600DC0E6C /* SourceCodePro-ExtraLightIt.otf in Resources */,
-				630A40BF1D2ED34600DC0E6C /* SourceCodePro-BlackIt.otf in Resources */,
-				630A40C71D2ED34600DC0E6C /* SourceCodePro-Medium.otf in Resources */,
-				630A40CA1D2ED34600DC0E6C /* SourceCodePro-Semibold.otf in Resources */,
+				611B86AB1D2EE6B900064830 /* SourceCodePro-Black.otf in Resources */,
+				611B86AC1D2EE6B900064830 /* SourceCodePro-BlackIt.otf in Resources */,
+				611B86AF1D2EE6B900064830 /* SourceCodePro-ExtraLight.otf in Resources */,
+				611B86B21D2EE6B900064830 /* SourceCodePro-Light.otf in Resources */,
+				611B86B01D2EE6B900064830 /* SourceCodePro-ExtraLightIt.otf in Resources */,
 				63E07AD81D2DBA63006A1F0F /* Assets.xcassets in Resources */,
 				63E07AD61D2DBA63006A1F0F /* Main.storyboard in Resources */,
-				630A40C11D2ED34600DC0E6C /* SourceCodePro-BoldIt.otf in Resources */,
-				630A40C91D2ED34600DC0E6C /* SourceCodePro-Regular.otf in Resources */,
-				630A40C61D2ED34600DC0E6C /* SourceCodePro-LightIt.otf in Resources */,
+				611B86B11D2EE6B900064830 /* SourceCodePro-It.otf in Resources */,
+				611B86B81D2EE6B900064830 /* SourceCodePro-SemiboldIt.otf in Resources */,
+				611B86AD1D2EE6B900064830 /* SourceCodePro-Bold.otf in Resources */,
+				611B86B51D2EE6B900064830 /* SourceCodePro-MediumIt.otf in Resources */,
+				611B86B61D2EE6B900064830 /* SourceCodePro-Regular.otf in Resources */,
+				611B86AA1D2EE6B900064830 /* SIL Open Font License.txt in Resources */,
+				611B86B31D2EE6B900064830 /* SourceCodePro-LightIt.otf in Resources */,
+				611B86AE1D2EE6B900064830 /* SourceCodePro-BoldIt.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

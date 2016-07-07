@@ -15,6 +15,14 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     
+//    @IBOutlet var tapScreen: UITapGestureRecognizer!
+    
+    @IBAction func tapScreen(sender: AnyObject) {
+        
+        self.view.endEditing(true)
+        
+    }
+    
     var actInd: UIActivityIndicatorView = UIActivityIndicatorView(frame: CGRectMake(0,0,150,150)) as UIActivityIndicatorView
     
     override func viewDidLoad() {
