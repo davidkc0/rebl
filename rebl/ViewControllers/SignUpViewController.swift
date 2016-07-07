@@ -28,6 +28,9 @@ class SignUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+//        self.navigationController?.setNavigationBarHidden(true, animated: false)
+        self.navigationController?.navigationBar.alpha = 0
+        
         self.actInd.center = self.view.center
         self.actInd.hidesWhenStopped = true
         self.actInd.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.Gray

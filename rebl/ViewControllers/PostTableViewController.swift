@@ -13,13 +13,23 @@ class PostTableViewController: UITableViewController {
     @IBAction func loginButton(sender: AnyObject) {
         self.performSegueWithIdentifier("login", sender: self)
     }
+
     
     @IBAction func unwindToPostScreen(segue:UIStoryboardSegue) {
+//        self.navigationController?.setNavigationBarHidden(false, animated: false)
+        
+    }
+        
+    override func viewDidAppear(animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(false, animated: false)
+        self.navigationController?.navigationBar.alpha = 1
     }
 
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.navigationController?.setNavigationBarHidden(false, animated: false)
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
