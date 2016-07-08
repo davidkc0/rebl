@@ -7,8 +7,12 @@
 //
 
 import UIKit
+import Parse
 
 class PostTableViewController: UITableViewController {
+    
+    var postsArray: [Post] = []
+    
     
     @IBAction func loginButton(sender: AnyObject) {
         self.performSegueWithIdentifier("login", sender: self)
@@ -21,6 +25,7 @@ class PostTableViewController: UITableViewController {
     }
         
     override func viewDidAppear(animated: Bool) {
+        
         self.navigationController?.setNavigationBarHidden(false, animated: false)
         self.navigationController?.navigationBar.alpha = 1
     }
@@ -31,12 +36,34 @@ class PostTableViewController: UITableViewController {
         
         self.navigationController?.setNavigationBarHidden(false, animated: false)
 
+        let getPosts = PFQuery(className: "Post")
+        
+        getPosts.findObjectsInBackgroundWithBlock { (objects, error) -> Void in
+        
+
+            
+            print(objects)
+            for post in objects! {
+                self.postsArray.append(Post(parseObject: post))
+            }
+            
+            self.tableView.reloadData()
+        }
+        
+        print(getPosts)
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
+    
+    override func viewWillAppear(animated: Bool) {
+//        try PFUser.logInWithUsername("a", password: "a")
+        
+//        PFUser.logInWithUsername("a", password: "a")
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -47,23 +74,29 @@ class PostTableViewController: UITableViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return postsArray.count
     }
+    
+    
 
-    /*
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("postCell", forIndexPath: indexPath) as! PostTableViewCell
 
-        // Configure the cell...
-
+        let post = postsArray[indexPath.row]
+        
+        cell.postTitleLabel.text = post.title
+        
+        
+        
         return cell
     }
-    */
+ 
 
     /*
     // Override to support conditional editing of the table view.

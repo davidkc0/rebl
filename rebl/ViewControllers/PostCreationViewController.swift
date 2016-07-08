@@ -16,6 +16,12 @@ class PostCreationViewController: UIViewController {
     
     @IBOutlet weak var submitButton: UIButton!
     
+    
+    @IBAction func tapOutside(sender: AnyObject) {
+        
+        self.view.endEditing(true)
+    }
+    
     @IBAction func submitButton(sender: AnyObject) {
         let postObject = PFObject(className: "Post")
         

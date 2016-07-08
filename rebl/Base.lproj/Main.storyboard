@@ -10,6 +10,7 @@
             <string>SourceCodePro-Semibold</string>
             <string>SourceCodePro-Semibold</string>
             <string>SourceCodePro-Semibold</string>
+            <string>SourceCodePro-Semibold</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -22,39 +23,64 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="72" id="Uiw-lh-I6o">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="postCell" rowHeight="72" id="Uiw-lh-I6o" customClass="PostTableViewCell" customModule="rebl" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="600" height="72"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Uiw-lh-I6o" id="WWZ-QG-YJT">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="71"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="100 points" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tD9-Al-ZFg">
-                                            <rect key="frame" x="15" y="34" width="89" height="24"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100 points" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tD9-Al-ZFg">
+                                            <rect key="frame" x="8" y="47" width="63" height="16"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="13"/>
                                             <color key="textColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="by username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lEy-s1-hKt">
-                                            <rect key="frame" x="485" y="34" width="107" height="24"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="by vbf711" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lEy-s1-hKt">
+                                            <rect key="frame" x="533" y="47" width="59" height="16"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="13"/>
                                             <color key="textColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="subbmited 1 hour ago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ezy-Z1-VgX">
-                                            <rect key="frame" x="337" y="34" width="140" height="24"/>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="13"/>
-                                            <color key="textColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="post title/link" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mDY-Aq-fSN">
-                                            <rect key="frame" x="15" y="8" width="577" height="21"/>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="post title/link" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mDY-Aq-fSN">
+                                            <rect key="frame" x="8" y="8" width="584" height="23"/>
+                                            <fontDescription key="fontDescription" name="SourceCodePro-Semibold" family="Source Code Pro" pointSize="18"/>
                                             <color key="textColor" red="0.0" green="0.72941176470000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 hour ago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ezy-Z1-VgX">
+                                            <rect key="frame" x="527" y="8" width="65" height="16"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="13"/>
+                                            <color key="textColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Ezy-Z1-VgX" firstAttribute="top" secondItem="WWZ-QG-YJT" secondAttribute="topMargin" id="2pC-Y9-5L4"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="lEy-s1-hKt" secondAttribute="bottom" id="4K8-35-iAP"/>
+                                        <constraint firstItem="mDY-Aq-fSN" firstAttribute="leading" secondItem="WWZ-QG-YJT" secondAttribute="leadingMargin" id="GeP-tg-8zU"/>
+                                        <constraint firstItem="tD9-Al-ZFg" firstAttribute="leading" secondItem="WWZ-QG-YJT" secondAttribute="leadingMargin" id="Jl8-Zz-cQW"/>
+                                        <constraint firstItem="mDY-Aq-fSN" firstAttribute="top" secondItem="WWZ-QG-YJT" secondAttribute="topMargin" id="Qgq-zu-ZBR"/>
+                                        <constraint firstItem="Ezy-Z1-VgX" firstAttribute="centerX" secondItem="WWZ-QG-YJT" secondAttribute="centerX" id="RGG-Nd-PIl"/>
+                                        <constraint firstItem="lEy-s1-hKt" firstAttribute="trailing" secondItem="WWZ-QG-YJT" secondAttribute="trailingMargin" id="UYb-f0-fe2"/>
+                                        <constraint firstItem="mDY-Aq-fSN" firstAttribute="trailing" secondItem="WWZ-QG-YJT" secondAttribute="trailingMargin" id="ZhE-tk-8rB"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="tD9-Al-ZFg" secondAttribute="bottom" id="fdW-2O-LCJ"/>
+                                        <constraint firstItem="Ezy-Z1-VgX" firstAttribute="trailing" secondItem="WWZ-QG-YJT" secondAttribute="trailingMargin" id="g93-oQ-eB5"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Ezy-Z1-VgX" secondAttribute="bottom" id="po1-3D-v9s"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="RGG-Nd-PIl"/>
+                                            <exclude reference="po1-3D-v9s"/>
+                                        </mask>
+                                    </variation>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="postScoreLabel" destination="tD9-Al-ZFg" id="z2z-Wy-49I"/>
+                                    <outlet property="postTimeLabel" destination="Ezy-Z1-VgX" id="44z-hp-N4f"/>
+                                    <outlet property="postTitleLabel" destination="mDY-Aq-fSN" id="RYv-bI-8y5"/>
+                                    <outlet property="postUsernameLabel" destination="lEy-s1-hKt" id="atd-19-WWe"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -141,6 +167,7 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.72941176470000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="Fxm-gq-Qd9" firstAttribute="top" secondItem="WiU-yf-UqH" secondAttribute="bottom" constant="20" id="7cP-1b-rs4"/>
                             <constraint firstItem="b4F-Tp-mVS" firstAttribute="centerX" secondItem="brj-MI-OMw" secondAttribute="centerX" id="Aqa-Rr-aDF"/>
@@ -157,6 +184,9 @@
                                 <exclude reference="pam-AS-TAO"/>
                             </mask>
                         </variation>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="pbd-0m-pqo" appends="YES" id="tO7-ZF-f15"/>
+                        </connections>
                     </view>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
@@ -166,6 +196,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="waN-EP-ldy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="pbd-0m-pqo">
+                    <connections>
+                        <action selector="tapOutside:" destination="bdT-c2-ShY" id="UHk-8r-W5Y"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="273" y="648"/>
         </scene>
