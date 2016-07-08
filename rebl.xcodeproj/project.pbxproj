@@ -22,6 +22,7 @@
 		611B86B61D2EE6B900064830 /* SourceCodePro-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 611B86A61D2EE6B900064830 /* SourceCodePro-Regular.otf */; };
 		611B86B71D2EE6B900064830 /* SourceCodePro-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 611B86A71D2EE6B900064830 /* SourceCodePro-Semibold.otf */; };
 		611B86B81D2EE6B900064830 /* SourceCodePro-SemiboldIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 611B86A81D2EE6B900064830 /* SourceCodePro-SemiboldIt.otf */; };
+		61DD31B41D2F20E500F28F73 /* reblLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 61DD31B31D2F20E500F28F73 /* reblLogo.png */; };
 		630A40CD1D2F089000DC0E6C /* PostCreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630A40CC1D2F089000DC0E6C /* PostCreationViewController.swift */; };
 		635A72731D2DEC1E00472009 /* ParseLoginHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635A72721D2DEC1E00472009 /* ParseLoginHelper.swift */; };
 		635A72751D2DECC300472009 /* ErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635A72741D2DECC300472009 /* ErrorHandling.swift */; };
@@ -54,6 +55,7 @@
 		611B86A61D2EE6B900064830 /* SourceCodePro-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceCodePro-Regular.otf"; sourceTree = "<group>"; };
 		611B86A71D2EE6B900064830 /* SourceCodePro-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceCodePro-Semibold.otf"; sourceTree = "<group>"; };
 		611B86A81D2EE6B900064830 /* SourceCodePro-SemiboldIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceCodePro-SemiboldIt.otf"; sourceTree = "<group>"; };
+		61DD31B31D2F20E500F28F73 /* reblLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reblLogo.png; sourceTree = "<group>"; };
 		630A40CC1D2F089000DC0E6C /* PostCreationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCreationViewController.swift; sourceTree = "<group>"; };
 		635A72721D2DEC1E00472009 /* ParseLoginHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseLoginHelper.swift; sourceTree = "<group>"; };
 		635A72741D2DECC300472009 /* ErrorHandling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorHandling.swift; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 				63E07AD71D2DBA63006A1F0F /* Assets.xcassets */,
 				63E07AD91D2DBA63006A1F0F /* LaunchScreen.storyboard */,
 				63E07ADC1D2DBA63006A1F0F /* Info.plist */,
+				61DD31B31D2F20E500F28F73 /* reblLogo.png */,
 			);
 			path = rebl;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				611B86AA1D2EE6B900064830 /* SIL Open Font License.txt in Resources */,
 				611B86B31D2EE6B900064830 /* SourceCodePro-LightIt.otf in Resources */,
 				611B86AE1D2EE6B900064830 /* SourceCodePro-BoldIt.otf in Resources */,
+				61DD31B41D2F20E500F28F73 /* reblLogo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
