@@ -18,45 +18,46 @@
         <scene sceneID="VHG-JU-dv1">
             <objects>
                 <tableViewController id="pBE-V5-yVm" customClass="PostTableViewController" customModule="rebl" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="72" sectionHeaderHeight="28" sectionFooterHeight="28" id="SIA-Qb-1pN">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="101" sectionHeaderHeight="28" sectionFooterHeight="28" id="SIA-Qb-1pN">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="postCell" rowHeight="72" id="Uiw-lh-I6o" customClass="PostTableViewCell" customModule="rebl" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="600" height="72"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="postCell" rowHeight="101" id="Uiw-lh-I6o" customClass="PostTableViewCell" customModule="rebl" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="101"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Uiw-lh-I6o" id="WWZ-QG-YJT">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="71"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="post title/link" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="mDY-Aq-fSN">
+                                            <rect key="frame" x="8" y="8" width="584" height="19"/>
+                                            <fontDescription key="fontDescription" name="SourceCodePro-Semibold" family="Source Code Pro" pointSize="15"/>
+                                            <color key="textColor" red="0.0" green="0.72941176470000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100 points" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tD9-Al-ZFg">
-                                            <rect key="frame" x="8" y="47" width="63" height="16"/>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="13"/>
+                                            <rect key="frame" x="8" y="80" width="49" height="12"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="10"/>
+                                            <color key="textColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 hour ago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ezy-Z1-VgX">
+                                            <rect key="frame" x="446" y="80" width="50" height="12"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="10"/>
                                             <color key="textColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="by vbf711" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lEy-s1-hKt">
-                                            <rect key="frame" x="533" y="47" width="59" height="16"/>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="13"/>
-                                            <color key="textColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="post title/link" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mDY-Aq-fSN">
-                                            <rect key="frame" x="8" y="8" width="584" height="23"/>
-                                            <fontDescription key="fontDescription" name="SourceCodePro-Semibold" family="Source Code Pro" pointSize="18"/>
-                                            <color key="textColor" red="0.0" green="0.72941176470000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 hour ago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ezy-Z1-VgX">
-                                            <rect key="frame" x="527" y="8" width="65" height="16"/>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="13"/>
+                                            <rect key="frame" x="546" y="80" width="46" height="12"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="10"/>
                                             <color key="textColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="Ezy-Z1-VgX" firstAttribute="top" secondItem="WWZ-QG-YJT" secondAttribute="topMargin" id="2pC-Y9-5L4"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Ezy-Z1-VgX" secondAttribute="bottom" id="2RV-jg-e5f"/>
+                                        <constraint firstItem="Ezy-Z1-VgX" firstAttribute="top" secondItem="WWZ-QG-YJT" secondAttribute="topMargin" constant="68" id="2pC-Y9-5L4"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="lEy-s1-hKt" secondAttribute="bottom" id="4K8-35-iAP"/>
                                         <constraint firstItem="mDY-Aq-fSN" firstAttribute="leading" secondItem="WWZ-QG-YJT" secondAttribute="leadingMargin" id="GeP-tg-8zU"/>
                                         <constraint firstItem="tD9-Al-ZFg" firstAttribute="leading" secondItem="WWZ-QG-YJT" secondAttribute="leadingMargin" id="Jl8-Zz-cQW"/>
@@ -65,12 +66,15 @@
                                         <constraint firstItem="lEy-s1-hKt" firstAttribute="trailing" secondItem="WWZ-QG-YJT" secondAttribute="trailingMargin" id="UYb-f0-fe2"/>
                                         <constraint firstItem="mDY-Aq-fSN" firstAttribute="trailing" secondItem="WWZ-QG-YJT" secondAttribute="trailingMargin" id="ZhE-tk-8rB"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="tD9-Al-ZFg" secondAttribute="bottom" id="fdW-2O-LCJ"/>
-                                        <constraint firstItem="Ezy-Z1-VgX" firstAttribute="trailing" secondItem="WWZ-QG-YJT" secondAttribute="trailingMargin" id="g93-oQ-eB5"/>
+                                        <constraint firstItem="Ezy-Z1-VgX" firstAttribute="trailing" secondItem="WWZ-QG-YJT" secondAttribute="trailingMargin" constant="-100" id="g93-oQ-eB5"/>
+                                        <constraint firstItem="lEy-s1-hKt" firstAttribute="leading" secondItem="Ezy-Z1-VgX" secondAttribute="trailing" constant="50" id="ilF-5o-a61"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="Ezy-Z1-VgX" secondAttribute="bottom" id="po1-3D-v9s"/>
                                     </constraints>
                                     <variation key="default">
                                         <mask key="constraints">
+                                            <exclude reference="2pC-Y9-5L4"/>
                                             <exclude reference="RGG-Nd-PIl"/>
+                                            <exclude reference="g93-oQ-eB5"/>
                                             <exclude reference="po1-3D-v9s"/>
                                         </mask>
                                     </variation>

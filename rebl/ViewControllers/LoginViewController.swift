@@ -19,7 +19,8 @@ class LoginViewController: UIViewController {
         self.view.endEditing(true)
     }
     
-    var actInd: UIActivityIndicatorView = UIActivityIndicatorView(frame: CGRectMake(0,0,150,150))
+    var actInd: UIActivityIndicatorView = UIActivityIndicatorView(frame: CGRectMake(0,0,150,150)) as UIActivityIndicatorView
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
