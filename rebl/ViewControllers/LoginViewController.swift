@@ -66,14 +66,14 @@ class LoginViewController: UIViewController {
         
         passwordField.resignFirstResponder()
         
-        var username = self.usernameField.text
-        var password = self.passwordField.text
+        let username = self.usernameField.text
+        let password = self.passwordField.text
         
         
         
         if (username?.utf16.count < 5 || password!.utf16.count < 5) {
             
-            var alert = UIAlertView(title: "invaild", message: "username and password must be greater then 5 characters", delegate: self, cancelButtonTitle: "okay")
+            let alert = UIAlertView(title: "invaild", message: "username and password must be greater then 5 characters", delegate: self, cancelButtonTitle: "okay")
             
             alert.show()
             

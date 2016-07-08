@@ -58,23 +58,23 @@ class SignUpViewController: UIViewController {
     */
     @IBAction func signupAction(sender: AnyObject) {
         
-            var email = self.emailField.text
-            var username = self.usernameField.text
-            var password = self.passwordField.text
+            let email = self.emailField.text
+            let username = self.usernameField.text
+            let password = self.passwordField.text
             
             if (username?.utf16.count < 5 || password!.utf16.count < 5) {
                 
-                var alart = UIAlertView(title: "invaild", message: "username and password must be greater then 5 characters", delegate: self, cancelButtonTitle: "okay")
+                let alart = UIAlertView(title: "invaild", message: "username and password must be greater then 5 characters", delegate: self, cancelButtonTitle: "okay")
                 alart.show()
                 
-            }else if (email?.utf16.count < 8) {
-                var alart = UIAlertView(title: "invaild", message: "please enter a vaild email", delegate: self, cancelButtonTitle: "okay")
+            } else if (email?.utf16.count < 8) {
+                let alart = UIAlertView(title: "invaild", message: "please enter a vaild email", delegate: self, cancelButtonTitle: "okay")
                 alart.show()
                 
-            }else {
+            } else {
                 self.actInd.stopAnimating()
                 
-                var newUser = PFUser()
+                let newUser = PFUser()
                 newUser.email = email
                 newUser.username = username
                 newUser.password = password
@@ -83,24 +83,17 @@ class SignUpViewController: UIViewController {
                     
                     self.actInd.stopAnimating()
                     if ((error) != nil) {
-                        var alart = UIAlertView(title: "error", message: "\(error)", delegate: self, cancelButtonTitle: "okay")
-                        alart.show()
-                    }else{
-                        var alart = UIAlertView(title: "succuess", message: "signed up", delegate: self, cancelButtonTitle: "okay")
-                        alart.show()
+                        let alert = UIAlertView(title: "error", message: "\(error)", delegate: self, cancelButtonTitle: "okay")
+                        alert.show()
+                    } else {
+                        let alert = UIAlertView(title: "succuess", message: "signed up", delegate: self, cancelButtonTitle: "okay")
+                        alert.show()
                     }
                 
                 })
-                
+            
         
-        
-        
-        
-        
-        
-    }
-
-    
+        }
    // @IBAction func alreadyMemberAction(sender: AnyObject) {
         //self.performSegueWithIdentifier("login", sender: self)
     }

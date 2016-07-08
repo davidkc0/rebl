@@ -22,6 +22,7 @@
 		611B86B61D2EE6B900064830 /* SourceCodePro-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 611B86A61D2EE6B900064830 /* SourceCodePro-Regular.otf */; };
 		611B86B71D2EE6B900064830 /* SourceCodePro-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 611B86A71D2EE6B900064830 /* SourceCodePro-Semibold.otf */; };
 		611B86B81D2EE6B900064830 /* SourceCodePro-SemiboldIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 611B86A81D2EE6B900064830 /* SourceCodePro-SemiboldIt.otf */; };
+		61CFA9B61D302CF6002E5C2E /* Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61CFA9B51D302CF6002E5C2E /* Links.swift */; };
 		61DD31B41D2F20E500F28F73 /* reblLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 61DD31B31D2F20E500F28F73 /* reblLogo.png */; };
 		61DD31B61D2F2C8800F28F73 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DD31B51D2F2C8800F28F73 /* PostTableViewCell.swift */; };
 		61DD31B81D2F46CE00F28F73 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DD31B71D2F46CE00F28F73 /* Post.swift */; };
@@ -58,6 +59,7 @@
 		611B86A61D2EE6B900064830 /* SourceCodePro-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceCodePro-Regular.otf"; sourceTree = "<group>"; };
 		611B86A71D2EE6B900064830 /* SourceCodePro-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceCodePro-Semibold.otf"; sourceTree = "<group>"; };
 		611B86A81D2EE6B900064830 /* SourceCodePro-SemiboldIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceCodePro-SemiboldIt.otf"; sourceTree = "<group>"; };
+		61CFA9B51D302CF6002E5C2E /* Links.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Links.swift; sourceTree = "<group>"; };
 		61DD31B31D2F20E500F28F73 /* reblLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reblLogo.png; sourceTree = "<group>"; };
 		61DD31B51D2F2C8800F28F73 /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		61DD31B71D2F46CE00F28F73 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 			children = (
 				635A72721D2DEC1E00472009 /* ParseLoginHelper.swift */,
 				635A72741D2DECC300472009 /* ErrorHandling.swift */,
+				61CFA9B51D302CF6002E5C2E /* Links.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 				63E07AD11D2DBA63006A1F0F /* AppDelegate.swift in Sources */,
 				635A72731D2DEC1E00472009 /* ParseLoginHelper.swift in Sources */,
 				636A0BF11D2E3CDB004C61BA /* LoginViewController.swift in Sources */,
+				61CFA9B61D302CF6002E5C2E /* Links.swift in Sources */,
 				636A0BF71D2E4B00004C61BA /* PostTableViewController.swift in Sources */,
 				636A0BF51D2E45E4004C61BA /* Main2ViewController.swift in Sources */,
 				61DD31B61D2F2C8800F28F73 /* PostTableViewCell.swift in Sources */,

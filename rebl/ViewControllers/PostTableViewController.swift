@@ -26,6 +26,11 @@ class PostTableViewController: UITableViewController {
         
     override func viewDidAppear(animated: Bool) {
         
+        
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+
         self.navigationController?.setNavigationBarHidden(false, animated: false)
         self.navigationController?.navigationBar.alpha = 1
     }
@@ -34,7 +39,7 @@ class PostTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationController?.setNavigationBarHidden(false, animated: false)
+//        self.navigationController?.setNavigationBarHidden(false, animated: false)
 
         let getPosts = PFQuery(className: "Post")
         
@@ -102,6 +107,27 @@ class PostTableViewController: UITableViewController {
     }
  
 
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        
+        performSegueWithIdentifier("webviewSegue", sender: self)
+        
+        
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        
+        if segue.identifier == "webviewSegue" {
+            
+            let index = tableView.indexPathForSelectedRow
+            let currPost = postsArray[(index?.row)!]
+            
+            let webViewController = segue.destinationViewController as! WebViewController
+            webViewController.currentPost = currPost
+        }
+    }
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {

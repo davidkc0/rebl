@@ -12,11 +12,23 @@ class WebViewController: UIViewController {
 
     @IBOutlet weak var webView: UIWebView!
     
+    var currentPost: Post! = nil
+    
     override func viewDidLoad() {
+        
+        navigationController?.navigationBar.alpha = 0
+        
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+//        print(currentPost.url)
+        print(beautifyLink(currentPost.url))
+        let theURL = NSURL(string: beautifyLink(currentPost.url))
+        let theRequest = NSURLRequest(URL: theURL!)
+        webView.loadRequest(theRequest)
+        
     }
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
