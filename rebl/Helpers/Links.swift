@@ -28,9 +28,7 @@ func beautifyLink(link: String) -> String {
             
             return ("http://" + link)
         }
-    } else {
-        return ("http://www." + link)
-    }
+    } 
     
     return link
 }

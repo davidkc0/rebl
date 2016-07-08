@@ -20,6 +20,9 @@ class WebViewController: UIViewController {
         
         super.viewDidLoad()
 
+        NSURLCache.sharedURLCache().removeAllCachedResponses()
+        NSURLCache.sharedURLCache().diskCapacity = 0
+        NSURLCache.sharedURLCache().memoryCapacity = 0
 //        print(currentPost.url)
         print(beautifyLink(currentPost.url))
         let theURL = NSURL(string: beautifyLink(currentPost.url))

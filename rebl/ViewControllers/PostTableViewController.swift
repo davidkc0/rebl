@@ -96,6 +96,7 @@ class PostTableViewController: UITableViewController {
         
         cell.postTimeLabel.text = dateString
         
+        cell.postScoreLabel.text = (post.upVotes + " points")
 
         post.user.fetchInBackgroundWithBlock { (object, error) in
             let user = object as! PFUser

@@ -16,6 +16,8 @@ class Post {
     var user: PFUser
     var timeCreated: NSDate!
     
+    var upVotes: String = ""
+    
     init(parseObject: PFObject) {
         
         self.title = parseObject["title"] as! String
@@ -24,16 +26,11 @@ class Post {
         
         self.user = parseObject["user"] as! PFUser
         
-//        user.fetchInBackgroundWithBlock { (newUser, error) in
-//            let theUser = newUser as! PFUser
-//            self.user = theUser.username!
-//            
-//            
-//        }
-        
-//        user.fetchIfNeededInBackgroundWithBlock { (<#PFObject?#>, <#NSError?#>) in
-//            <#code#>
-//        }
+        if self.title == "The Boss" {
+            self.upVotes = "56,234,193"
+        } else {
+            self.upVotes = (String(Int(arc4random()) % 100))
+        }
         
 
         
