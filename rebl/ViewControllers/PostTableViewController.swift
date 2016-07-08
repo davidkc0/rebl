@@ -39,31 +39,21 @@ class PostTableViewController: UITableViewController {
         let getPosts = PFQuery(className: "Post")
         
         getPosts.findObjectsInBackgroundWithBlock { (objects, error) -> Void in
-        
 
-            
-            print(objects)
             for post in objects! {
                 self.postsArray.append(Post(parseObject: post))
             }
             
             self.tableView.reloadData()
         }
-        
-        print(getPosts)
+    
+
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-    }
-    
-    override func viewWillAppear(animated: Bool) {
-//        try PFUser.logInWithUsername("a", password: "a")
-        
-//        PFUser.logInWithUsername("a", password: "a")
-    }
-    
+    }    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -88,11 +78,25 @@ class PostTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("postCell", forIndexPath: indexPath) as! PostTableViewCell
 
+        cell.postUsernameLabel.text = ""
+        
         let post = postsArray[indexPath.row]
         
         cell.postTitleLabel.text = post.title
         
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateStyle = .LongStyle
+        dateFormatter.timeStyle = .ShortStyle
+        let dateString = dateFormatter.stringFromDate(post.timeCreated)
         
+        cell.postTimeLabel.text = dateString
+        
+
+        post.user.fetchInBackgroundWithBlock { (object, error) in
+            let user = object as! PFUser
+            
+            cell.postUsernameLabel.text = user.username
+        }
         
         return cell
     }

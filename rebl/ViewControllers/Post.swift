@@ -13,12 +13,29 @@ import Parse
 class Post {
     var title: String = ""
     var url: String = ""
-    var user: String = ""
+    var user: PFUser
+    var timeCreated: NSDate!
     
     init(parseObject: PFObject) {
         
         self.title = parseObject["title"] as! String
         self.url = parseObject["url"] as! String
-//        self.user = parseObject["user"] as! String
+        self.timeCreated = parseObject.createdAt
+        
+        self.user = parseObject["user"] as! PFUser
+        
+//        user.fetchInBackgroundWithBlock { (newUser, error) in
+//            let theUser = newUser as! PFUser
+//            self.user = theUser.username!
+//            
+//            
+//        }
+        
+//        user.fetchIfNeededInBackgroundWithBlock { (<#PFObject?#>, <#NSError?#>) in
+//            <#code#>
+//        }
+        
+
+        
     }
 }

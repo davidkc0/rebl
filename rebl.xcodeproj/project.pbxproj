@@ -25,6 +25,7 @@
 		61DD31B41D2F20E500F28F73 /* reblLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 61DD31B31D2F20E500F28F73 /* reblLogo.png */; };
 		61DD31B61D2F2C8800F28F73 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DD31B51D2F2C8800F28F73 /* PostTableViewCell.swift */; };
 		61DD31B81D2F46CE00F28F73 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DD31B71D2F46CE00F28F73 /* Post.swift */; };
+		61DD31BA1D2F76EF00F28F73 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DD31B91D2F76EF00F28F73 /* WebViewController.swift */; };
 		630A40CD1D2F089000DC0E6C /* PostCreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630A40CC1D2F089000DC0E6C /* PostCreationViewController.swift */; };
 		635A72731D2DEC1E00472009 /* ParseLoginHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635A72721D2DEC1E00472009 /* ParseLoginHelper.swift */; };
 		635A72751D2DECC300472009 /* ErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635A72741D2DECC300472009 /* ErrorHandling.swift */; };
@@ -36,7 +37,6 @@
 		63E07AD61D2DBA63006A1F0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63E07AD41D2DBA63006A1F0F /* Main.storyboard */; };
 		63E07AD81D2DBA63006A1F0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63E07AD71D2DBA63006A1F0F /* Assets.xcassets */; };
 		63E07ADB1D2DBA63006A1F0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63E07AD91D2DBA63006A1F0F /* LaunchScreen.storyboard */; };
-		63E985B81D2F743000A6046D /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E985B71D2F743000A6046D /* WebViewController.swift */; };
 		79E6B5DA41260EFEA98FD2A6 /* Pods_rebl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40757EDCD11B1EEEE0B125ED /* Pods_rebl.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +61,7 @@
 		61DD31B31D2F20E500F28F73 /* reblLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reblLogo.png; sourceTree = "<group>"; };
 		61DD31B51D2F2C8800F28F73 /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		61DD31B71D2F46CE00F28F73 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		61DD31B91D2F76EF00F28F73 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		630A40CC1D2F089000DC0E6C /* PostCreationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCreationViewController.swift; sourceTree = "<group>"; };
 		635A72721D2DEC1E00472009 /* ParseLoginHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseLoginHelper.swift; sourceTree = "<group>"; };
 		635A72741D2DECC300472009 /* ErrorHandling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorHandling.swift; sourceTree = "<group>"; };
@@ -75,7 +76,6 @@
 		63E07AD71D2DBA63006A1F0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63E07ADA1D2DBA63006A1F0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63E07ADC1D2DBA63006A1F0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		63E985B71D2F743000A6046D /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		AC7961019F169D4137994E69 /* Pods-rebl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rebl.debug.xcconfig"; path = "Pods/Target Support Files/Pods-rebl/Pods-rebl.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -157,7 +157,7 @@
 				636A0BF61D2E4B00004C61BA /* PostTableViewController.swift */,
 				61DD31B71D2F46CE00F28F73 /* Post.swift */,
 				630A40CC1D2F089000DC0E6C /* PostCreationViewController.swift */,
-				63E985B71D2F743000A6046D /* WebViewController.swift */,
+				61DD31B91D2F76EF00F28F73 /* WebViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -187,10 +187,10 @@
 				61DD31B21D2EF13A00F28F73 /* Junk */,
 				635A72711D2DEB7200472009 /* ViewControllers */,
 				635A72701D2DEB2400472009 /* Helpers */,
-				63E07AD01D2DBA63006A1F0F /* AppDelegate.swift */,
 				63E07AD41D2DBA63006A1F0F /* Main.storyboard */,
 				61DD31B51D2F2C8800F28F73 /* PostTableViewCell.swift */,
 				63E07AD71D2DBA63006A1F0F /* Assets.xcassets */,
+				63E07AD01D2DBA63006A1F0F /* AppDelegate.swift */,
 				63E07AD91D2DBA63006A1F0F /* LaunchScreen.storyboard */,
 				63E07ADC1D2DBA63006A1F0F /* Info.plist */,
 				61DD31B31D2F20E500F28F73 /* reblLogo.png */,
@@ -338,7 +338,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				636A0BF31D2E3CE9004C61BA /* SignUpViewController.swift in Sources */,
-				63E985B81D2F743000A6046D /* WebViewController.swift in Sources */,
+				61DD31BA1D2F76EF00F28F73 /* WebViewController.swift in Sources */,
 				635A72751D2DECC300472009 /* ErrorHandling.swift in Sources */,
 				630A40CD1D2F089000DC0E6C /* PostCreationViewController.swift in Sources */,
 				63E07AD11D2DBA63006A1F0F /* AppDelegate.swift in Sources */,

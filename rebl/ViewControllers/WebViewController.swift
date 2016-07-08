@@ -1,15 +1,17 @@
 //
 //  WebViewController.swift
-//  rebl
+//  
 //
-//  Created by David Ciaffoni on 7/7/16.
-//  Copyright © 2016 David Ciaffoni. All rights reserved.
+//  Created by Vince on 7/7/16.
+//
 //
 
 import UIKit
 
 class WebViewController: UIViewController {
 
+    @IBOutlet weak var webView: UIWebView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
