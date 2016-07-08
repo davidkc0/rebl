@@ -24,7 +24,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="postCell" rowHeight="72" id="Uiw-lh-I6o" customClass="PostTableViewCell" customModule="rebl" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="600" height="72"/>
+                                <rect key="frame" x="0.0" y="28" width="600" height="72"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Uiw-lh-I6o" id="WWZ-QG-YJT">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="71"/>
@@ -102,13 +102,39 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <segue destination="tNX-pt-fxE" kind="show" identifier="login" id="Wj5-hv-hwc"/>
+                        <segue destination="hBN-pu-4hO" kind="show" identifier="webview" id="dfE-KJ-KWT"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AVe-ld-RVX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="843" y="-131"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="vkO-wL-tBQ">
+            <objects>
+                <viewController id="hBN-pu-4hO" customClass="WebViewController" customModule="rebl" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3kw-q6-kgk"/>
+                        <viewControllerLayoutGuide type="bottom" id="wVJ-9E-c6y"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="A3Y-Lz-b4o">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lOL-lH-qL6">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VYv-Da-erH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="949" y="648"/>
         </scene>
         <!--Post Creation View Controller-->
         <scene sceneID="bFC-HI-Uai">
