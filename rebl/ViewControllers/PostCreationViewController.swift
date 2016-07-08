@@ -21,6 +21,7 @@ class PostCreationViewController: UIViewController {
         
         self.view.endEditing(true)
     }
+    var actInd: UIActivityIndicatorView = UIActivityIndicatorView(frame: CGRectMake(0,0,150,150)) as UIActivityIndicatorView
     
     @IBAction func submitButton(sender: AnyObject) {
         let postObject = PFObject(className: "Post")
@@ -31,7 +32,20 @@ class PostCreationViewController: UIViewController {
         postObject["user"] = PFUser.currentUser()
         
         postObject.saveInBackgroundWithBlock(nil)
+        
+        let url = self.urlTextBox.text
+        let postTitle = self.postTitleTextBox.text
+        
+        if (url?.utf16.count < 7 || postTitle!.utf16.count < 5) {
+            
+            let alert = UIAlertView(title: "invaild", message: "please enter a vaild url and/or a post title that is greater then 5 characters", delegate: self, cancelButtonTitle: "okay")
+            
+            alert.show()
+            
+        }
     }
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
