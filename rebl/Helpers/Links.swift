@@ -9,18 +9,18 @@
 import Foundation
 //import UIKit
 
-func beautifyLink(link: String) -> String {
+func beautifyLink(_ link: String) -> String {
     
-    let firstIndex: String.Index = link.startIndex.advancedBy(4)
-    let first4 = link.substringToIndex(firstIndex)
+    let firstIndex: String.Index = link.characters.index(link.startIndex, offsetBy: 4)
+    let first4 = link.substring(to: firstIndex)
     
-    let lastIndex: String.Index = link.endIndex.advancedBy(-4)
-    let last4 = link.substringFromIndex(lastIndex)
+    let lastIndex: String.Index = link.characters.index(link.endIndex, offsetBy: -4)
+    let last4 = link.substring(from: lastIndex)
     
-    var inBetween = link.substringFromIndex(firstIndex)
+    var inBetween = link.substring(from: firstIndex)
     
-    let newLastIndex: String.Index = inBetween.endIndex.advancedBy(-4)
-    inBetween = inBetween.substringToIndex(newLastIndex)
+    let newLastIndex: String.Index = inBetween.characters.index(inBetween.endIndex, offsetBy: -4)
+    inBetween = inBetween.substring(to: newLastIndex)
     
     
     if first4 == "www." {

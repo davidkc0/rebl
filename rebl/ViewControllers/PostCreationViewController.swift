@@ -8,6 +8,17 @@
 
 import UIKit
 import Parse
+fileprivate func < <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
+  switch (lhs, rhs) {
+  case let (l?, r?):
+    return l < r
+  case (nil, _?):
+    return true
+  default:
+    return false
+  }
+}
+
 
 class PostCreationViewController: UIViewController {
 
@@ -17,21 +28,21 @@ class PostCreationViewController: UIViewController {
     @IBOutlet weak var submitButton: UIButton!
     
     
-    @IBAction func tapOutside(sender: AnyObject) {
+    @IBAction func tapOutside(_ sender: AnyObject) {
         
         self.view.endEditing(true)
     }
-    var actInd: UIActivityIndicatorView = UIActivityIndicatorView(frame: CGRectMake(0,0,150,150)) as UIActivityIndicatorView
+    var actInd: UIActivityIndicatorView = UIActivityIndicatorView(frame: CGRect(x: 0,y: 0,width: 150,height: 150)) as UIActivityIndicatorView
     
-    @IBAction func submitButton(sender: AnyObject) {
+    @IBAction func submitButton(_ sender: AnyObject) {
         let postObject = PFObject(className: "Post")
         
         postObject["url"] = urlTextBox.text
         postObject["title"] = postTitleTextBox.text
         
-        postObject["user"] = PFUser.currentUser()
+        postObject["user"] = PFUser.current()
         
-        postObject.saveInBackgroundWithBlock(nil)
+        postObject.saveInBackground(block: nil)
         
         let url = self.urlTextBox.text
         let postTitle = self.postTitleTextBox.text
@@ -52,7 +63,7 @@ class PostCreationViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.navigationBar.alpha = 0
     }
 

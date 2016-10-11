@@ -14,22 +14,22 @@ class PostTableViewController: UITableViewController {
     var postsArray: [Post] = []
     
     
-    @IBAction func loginButton(sender: AnyObject) {
-        self.performSegueWithIdentifier("login", sender: self)
+    @IBAction func loginButton(_ sender: AnyObject) {
+        self.performSegue(withIdentifier: "login", sender: self)
     }
 
     
-    @IBAction func unwindToPostScreen(segue:UIStoryboardSegue) {
+    @IBAction func unwindToPostScreen(_ segue:UIStoryboardSegue) {
 //        self.navigationController?.setNavigationBarHidden(false, animated: false)
         
     }
         
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         
         
     }
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
 
         self.navigationController?.setNavigationBarHidden(false, animated: false)
         self.navigationController?.navigationBar.alpha = 1
@@ -43,7 +43,7 @@ class PostTableViewController: UITableViewController {
 
         let getPosts = PFQuery(className: "Post")
         
-        getPosts.findObjectsInBackgroundWithBlock { (objects, error) -> Void in
+        getPosts.findObjectsInBackground { (objects, error) -> Void in
 
             for post in objects! {
                 self.postsArray.append(Post(parseObject: post))
@@ -67,12 +67,12 @@ class PostTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return postsArray.count
     }
@@ -80,25 +80,25 @@ class PostTableViewController: UITableViewController {
     
 
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("postCell", forIndexPath: indexPath) as! PostTableViewCell
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "postCell", for: indexPath) as! PostTableViewCell
 
         cell.postUsernameLabel.text = ""
         
-        let post = postsArray[indexPath.row]
+        let post = postsArray[(indexPath as NSIndexPath).row]
         
         cell.postTitleLabel.text = post.title
         
-        let dateFormatter = NSDateFormatter()
-        dateFormatter.dateStyle = .LongStyle
-        dateFormatter.timeStyle = .ShortStyle
-        let dateString = dateFormatter.stringFromDate(post.timeCreated)
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .long
+        dateFormatter.timeStyle = .short
+        let dateString = dateFormatter.string(from: post.timeCreated as Date)
         
         cell.postTimeLabel.text = dateString
         
         cell.postScoreLabel.text = (post.upVotes + " points")
 
-        post.user.fetchInBackgroundWithBlock { (object, error) in
+        post.user.fetchInBackground { (object, error) in
             let user = object as! PFUser
             
             cell.postUsernameLabel.text = user.username
@@ -108,23 +108,23 @@ class PostTableViewController: UITableViewController {
     }
  
 
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         
-        performSegueWithIdentifier("webviewSegue", sender: self)
+        performSegue(withIdentifier: "webviewSegue", sender: self)
         
         
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         
         if segue.identifier == "webviewSegue" {
             
             let index = tableView.indexPathForSelectedRow
-            let currPost = postsArray[(index?.row)!]
+            let currPost = postsArray[((index as NSIndexPath?)?.row)!]
             
-            let webViewController = segue.destinationViewController as! WebViewController
+            let webViewController = segue.destination as! WebViewController
             webViewController.currentPost = currPost
         }
     }

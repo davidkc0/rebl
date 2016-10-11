@@ -8,6 +8,17 @@
 
 import UIKit
 import Parse
+fileprivate func < <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
+  switch (lhs, rhs) {
+  case let (l?, r?):
+    return l < r
+  case (nil, _?):
+    return true
+  default:
+    return false
+  }
+}
+
 
 class SignUpViewController: UIViewController {
 
@@ -17,13 +28,13 @@ class SignUpViewController: UIViewController {
     
 //    @IBOutlet var tapScreen: UITapGestureRecognizer!
     
-    @IBAction func tapScreen(sender: AnyObject) {
+    @IBAction func tapScreen(_ sender: AnyObject) {
         
         self.view.endEditing(true)
         
     }
     
-    var actInd: UIActivityIndicatorView = UIActivityIndicatorView(frame: CGRectMake(0,0,150,150)) as UIActivityIndicatorView
+    var actInd: UIActivityIndicatorView = UIActivityIndicatorView(frame: CGRect(x: 0,y: 0,width: 150,height: 150)) as UIActivityIndicatorView
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,7 +44,7 @@ class SignUpViewController: UIViewController {
         
         self.actInd.center = self.view.center
         self.actInd.hidesWhenStopped = true
-        self.actInd.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.Gray
+        self.actInd.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.gray
         view.addSubview(self.actInd)
         
         // Do any additional setup after loading the view.
@@ -56,7 +67,7 @@ class SignUpViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    @IBAction func signupAction(sender: AnyObject) {
+    @IBAction func signupAction(_ sender: AnyObject) {
         
             let email = self.emailField.text
             let username = self.usernameField.text
@@ -79,7 +90,7 @@ class SignUpViewController: UIViewController {
                 newUser.username = username
                 newUser.password = password
                 
-                newUser.signUpInBackgroundWithBlock({(succeed, error ) -> Void in
+                newUser.signUpInBackground(block: {(succeed, error ) -> Void in
                     
                     self.actInd.stopAnimating()
                     if ((error) != nil) {

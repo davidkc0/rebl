@@ -8,18 +8,29 @@
 
 import UIKit
 import Parse
+fileprivate func < <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
+  switch (lhs, rhs) {
+  case let (l?, r?):
+    return l < r
+  case (nil, _?):
+    return true
+  default:
+    return false
+  }
+}
+
 
 
 class LoginViewController: UIViewController {
 
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
-    @IBAction func tapScreen(sender: AnyObject) {
+    @IBAction func tapScreen(_ sender: AnyObject) {
         
         self.view.endEditing(true)
     }
     
-    var actInd: UIActivityIndicatorView = UIActivityIndicatorView(frame: CGRectMake(0,0,150,150)) as UIActivityIndicatorView
+    var actInd: UIActivityIndicatorView = UIActivityIndicatorView(frame: CGRect(x: 0,y: 0,width: 150,height: 150)) as UIActivityIndicatorView
     
     
     override func viewDidLoad() {
@@ -33,11 +44,11 @@ class LoginViewController: UIViewController {
         
         self.actInd.center = self.view.center
         self.actInd.center.y = self.view.frame.size.height * (3/4)
-        self.actInd.color = UIColor.whiteColor()
-        self.actInd.tintColor = UIColor.whiteColor()
+        self.actInd.color = UIColor.white
+        self.actInd.tintColor = UIColor.white
         
         self.actInd.hidesWhenStopped = true
-        self.actInd.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.Gray
+        self.actInd.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.gray
         view.addSubview(self.actInd)
 
         // Do any additional setup after loading the view.
@@ -63,7 +74,7 @@ class LoginViewController: UIViewController {
     
     //MARK: Actions
     
-    @IBAction func loginAction(sender: AnyObject) {
+    @IBAction func loginAction(_ sender: AnyObject) {
         
         passwordField.resignFirstResponder()
         
@@ -82,7 +93,7 @@ class LoginViewController: UIViewController {
             
             self.actInd.startAnimating()
             
-            PFUser.logInWithUsernameInBackground(username!, password: password!, block: { (user, error) ->
+            PFUser.logInWithUsername(inBackground: username!, password: password!, block: { (user, error) ->
                 Void in
                 
                 self.actInd.stopAnimating()
@@ -105,12 +116,12 @@ class LoginViewController: UIViewController {
     }
     
    
-    @IBAction func signupAction(sender: AnyObject) {
-        self.performSegueWithIdentifier("signup", sender: self)
+    @IBAction func signupAction(_ sender: AnyObject) {
+        self.performSegue(withIdentifier: "signup", sender: self)
     }
 
     
-    @IBAction func unwindToLogInScreen(segue:UIStoryboardSegue) {
+    @IBAction func unwindToLogInScreen(_ segue:UIStoryboardSegue) {
     }
     
 }

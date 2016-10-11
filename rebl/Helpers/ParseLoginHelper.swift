@@ -24,7 +24,7 @@ class ParseLoginHelper : NSObject {
     
     let callback: ParseLoginHelperCallback
     
-    init(callback: ParseLoginHelperCallback) {
+    init(callback: @escaping ParseLoginHelperCallback) {
         self.callback = callback
     }
 }
@@ -32,16 +32,16 @@ class ParseLoginHelper : NSObject {
 extension ParseLoginHelper : PFLogInViewControllerDelegate {
     
     
-    func logInViewController(logInController: PFLogInViewController, didLogInUser user: PFUser) {
+    func log(_ logInController: PFLogInViewController, didLogIn user: PFUser) {
         // Determine if this is a Facebook login
-        let isFacebookLogin = FBSDKAccessToken.currentAccessToken() != nil
+        let isFacebookLogin = FBSDKAccessToken.current() != nil
         
         if !isFacebookLogin {
             // Plain parse login, we can return user immediately
             self.callback(user, nil)
         } else {
             // if this is a Facebook login, fetch the username from Facebook
-            FBSDKGraphRequest(graphPath: "me", parameters: nil).startWithCompletionHandler {
+            FBSDKGraphRequest(graphPath: "me", parameters: nil).start {
                 (connection: FBSDKGraphRequestConnection!, result: AnyObject?, error: NSError?) -> Void in
                 if let error = error {
                     // Facebook Error? -> hand error to callback
@@ -52,7 +52,7 @@ extension ParseLoginHelper : PFLogInViewControllerDelegate {
                     // assign Facebook name to PFUser
                     user.username = fbUsername
                     // store PFUser
-                    user.saveInBackgroundWithBlock({ (success, error) -> Void in
+                    user.saveInBackground(block: { (success, error) -> Void in
                         if (success) {
                             // updated username could be stored -> call success
                             self.callback(user, error)
@@ -79,7 +79,7 @@ extension ParseLoginHelper : PFLogInViewControllerDelegate {
 
 extension ParseLoginHelper : PFSignUpViewControllerDelegate {
     
-    func signUpViewController(signUpController: PFSignUpViewController, didSignUpUser user: PFUser) {
+    func signUpViewController(_ signUpController: PFSignUpViewController, didSignUp user: PFUser) {
         self.callback(user, nil)
     }
     

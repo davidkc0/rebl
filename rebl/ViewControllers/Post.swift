@@ -14,7 +14,7 @@ class Post {
     var title: String = ""
     var url: String = ""
     var user: PFUser
-    var timeCreated: NSDate!
+    var timeCreated: Date!
     
     var upVotes: String = ""
     

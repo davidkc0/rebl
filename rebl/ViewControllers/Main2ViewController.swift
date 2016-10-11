@@ -27,7 +27,7 @@ class Main2ViewController: UITableViewController, PFLogInViewControllerDelegate,
         // Do any additional setup after loading the view.
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
         let logInLogoTtile = UILabel()
@@ -66,7 +66,7 @@ class Main2ViewController: UITableViewController, PFLogInViewControllerDelegate,
      */
     
     //PARSE LOGIN
-    func logInViewController(logInController: PFLogInViewController, shouldBeginLogInWithUsername username: String, password: String) -> Bool {
+    func log(_ logInController: PFLogInViewController, shouldBeginLogInWithUsername username: String, password: String) -> Bool {
         if (!username.isEmpty || !password.isEmpty){
             return true
         }else{
@@ -74,34 +74,34 @@ class Main2ViewController: UITableViewController, PFLogInViewControllerDelegate,
         }
     }
     
-    func logInViewController(logInController: PFLogInViewController, didLogInUser user: PFUser) {
-        self.dismissViewControllerAnimated(true, completion: nil)
+    func log(_ logInController: PFLogInViewController, didLogIn user: PFUser) {
+        self.dismiss(animated: true, completion: nil)
     }
     
-    func logInViewController(logInController: PFLogInViewController, didFailToLogInWithError error: NSError?) {
+    func log(_ logInController: PFLogInViewController, didFailToLogInWithError error: NSError?) {
         print("failed to login")
     }
     //PARSE  SIGN UP
     
     
     
-    func signUpViewController(signUpController: PFSignUpViewController, didSignUpUser user: PFUser) {
-        self.dismissViewControllerAnimated(true, completion: nil)
+    func signUpViewController(_ signUpController: PFSignUpViewController, didSignUp user: PFUser) {
+        self.dismiss(animated: true, completion: nil)
     }
     
-    func signUpViewController(signUpController: PFSignUpViewController, didFailToSignUpWithError error: NSError?) {
+    func signUpViewController(_ signUpController: PFSignUpViewController, didFailToSignUpWithError error: NSError?) {
         print("failed to sign up")
     }
     
-    func signUpViewControllerDidCancelSignUp(signUpController: PFSignUpViewController) {
+    func signUpViewControllerDidCancelSignUp(_ signUpController: PFSignUpViewController) {
         print("user dismissed sign up")
     }
     
     
     //action
     
-    @IBAction func loginButton(sender: AnyObject) {
-        self.performSegueWithIdentifier("login", sender: self)
+    @IBAction func loginButton(_ sender: AnyObject) {
+        self.performSegue(withIdentifier: "login", sender: self)
     }
 
 }

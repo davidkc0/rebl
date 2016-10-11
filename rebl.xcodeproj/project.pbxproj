@@ -237,6 +237,7 @@
 					63E07ACC1D2DBA63006A1F0F = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = 646WRNWU3E;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -472,6 +473,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.david-ciaffoni.rebl";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -487,6 +489,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.david-ciaffoni.rebl";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
